@@ -305,6 +305,33 @@ Escreva um código Python que leia as informações de dois produtos adquiridos 
 | *Exemplo 3* | 1 1 15.10 <br> 2 1 15.10 | VALOR A PAGAR: 30.20 |
 """
 
+Calculo02 = None
+Calculo01 = None
+Valor_peca02 = None
+Num_peca02 = None
+Valor_peca01 = None
+Num_peca01 = None
+Cod_peca02 = None
+Cod_peca01 = None
+
+def read_line():
+  try:
+    # read for Python 2.x
+    return raw_input()
+  except NameError:
+    # read for Python 3.x
+    return input()
+
+
+Cod_peca01 = read_line()
+Num_peca01 = read_line()
+Valor_peca01 = float((read_line()))
+Cod_peca02 = read_line()
+Num_peca02 = read_line()
+Valor_peca02 = float((read_line()))
+Calculo01 = "{:0.2f}".format((Num_peca01 * Valor_peca01))
+Calculo02 = "{:0.2f}".format((Num_peca02 * Valor_peca02))
+print(str("VALOR A PAGAR: R$ ") + str(Calculo01 + Calculo02))
 
 
 """[1018](https://www.urionlinejudge.com.br/judge/pt/problems/view/1018) - Sistemas de frente de loja também devem auxiliar vendedores a dar trocos. Por simplicidade, vamos considerar primeiro apenas trocos inteiros, que podem ser dados usando apenas cédulas.
