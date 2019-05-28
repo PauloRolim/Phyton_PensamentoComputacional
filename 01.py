@@ -290,7 +290,7 @@ nome = input()
 vendas = int(input())
 salario = float(input())
 
-vendas_comissao = vendas * comissao
+vendas_comissao = vendas * comissao (CONTINUA DAQUI)
 
 print(str(nome) + " " + str()
 
